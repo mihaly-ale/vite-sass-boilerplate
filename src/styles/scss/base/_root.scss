@@ -1,0 +1,48 @@
+@use '../abstracts/' as *;
+
+@use '../../../../node_modules/utopia-core-scss/src/utopia.scss' as utopia;
+
+/* Root start */
+
+//! ALL mixins use maps from `tokens.scss` or `overrides.scss` to generate custom properties
+//* fonts */
+:root {
+	@include utopia.generateTypeScale($utopia-config);
+}
+:root {
+	@include create-prop-from-map($font-families, 'ff', '-');
+}
+:root {
+	@include create-prop-from-map($font-weight-aliases);
+}
+
+//* lengths */
+:root {
+	@include create-prop-from-map($widths);
+}
+:root {
+	@include create-prop-from-map($sizes, 'size', '-');
+}
+:root {
+	@include create-prop-from-map($offsets);
+}
+
+//* colors */
+:root {
+	@include create-base-colors;
+}
+:root {
+	@include create-shades(gray);
+}
+:root {
+	@include create-shades($colors);
+}
+
+//* box-shadow */
+:root {
+	@include create-prop-from-map($shadows, 'shadow', '-');
+	@include create-shadow-color($primary-dark, $alpha: -25%);
+}
+
+/* Root end */
+

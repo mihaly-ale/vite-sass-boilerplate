@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+
+/* Fontface start */
+
+@include font-face('Kanit', 'kanit-regular', 400, normal, (true, sans));
+@include font-face('Kanit', 'kanit-semibold', 600, normal, (false, sans));
+@include font-face('Kanit', 'kanit-extralight', 200, normal, (false, sans));
+@include font-face('DMSerif', 'dmserif-regular', 400, normal, (true, serif));
+@include font-face('DMSerif', 'dmserif-italic', 400, italic, (false, serif));
+
+/* Fontface end */
+
