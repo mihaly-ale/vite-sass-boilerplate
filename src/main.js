@@ -101,13 +101,13 @@ setupCounter(document.querySelector('#counter'));
 
 const cardGrid = document.querySelector('.cards');
 
-cardContents.map((content) => {
+cardContents.forEach((content) => {
 	const card = createCard({ title: content.title, text: content.desc });
 	cardGrid.appendChild(card);
 });
 
 const SocialIcons = document.querySelector('.social-icons');
-socialLinks.map((item) => {
+socialLinks.forEach((item) => {
 	const link = createSocialLink(iconSprite, item);
 	SocialIcons.appendChild(link);
 });
