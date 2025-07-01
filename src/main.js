@@ -3,13 +3,13 @@ import '../src/styles/scss/main.scss';
 
 // Assets
 import viteLogo from '/src/assets/vite.svg';
-import jsLogo from '/src/assets//javascript.svg';
-import devLogo from '/src/assets//ma.svg';
+import jsLogo from '/src/assets/javascript.svg';
+import devLogo from '/src/assets/ma.svg';
 import iconSprite from '/src/assets/icon-sprite.svg';
 const cardContents = [
 	{
 		title: 'Sass',
-		desc: 'The template uses Sass for styling. It includes variables, mixins, and partials to speed up development and keep styles consistent. For font it uses <a href="https://utopia.fyi/" target="_blank">Utopia - Clamp Calculator</a>. The setup is easy to customize, making it simple to adapt the look to any project. For full description check the github repo, for the included reset file see the repo also on GtHub.',
+		desc: 'The template uses Sass for styling. It includes variables, mixins, and partials to speed up development and keep styles consistent. For font it uses <a href="https://utopia.fyi/" target="_blank">Utopia - Clamp Calculator</a>. The setup is easy to customize, making it simple to adapt the look to any project. For full description check the github repo, for the included reset file see the repo also on GitHub.',
 	},
 	{
 		title: 'Vite',
@@ -101,13 +101,13 @@ setupCounter(document.querySelector('#counter'));
 
 const cardGrid = document.querySelector('.cards');
 
-cardContents.map((content) => {
+cardContents.forEach((content) => {
 	const card = createCard({ title: content.title, text: content.desc });
 	cardGrid.appendChild(card);
 });
 
 const SocialIcons = document.querySelector('.social-icons');
-socialLinks.map((item) => {
+socialLinks.forEach((item) => {
 	const link = createSocialLink(iconSprite, item);
 	SocialIcons.appendChild(link);
 });
