@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "debug:sass": "sass --watch src/styles/scss/main.scss:src/styles/css/main.css"
+    "debug:sass": "sass --watch src/styles/scss/main.scss:src/styles/css/main.css",
+    "purge:scss": "purgecss --css dist/assets/*.css --content *.html --output ./"
   },
   "keywords": [
     "vite",
@@ -19,6 +20,7 @@
   "author": "Mihaly Ale",
   "license": "MIT",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
     "sass": "^1.89.0",
     "vite": "^6.3.4"
   },
