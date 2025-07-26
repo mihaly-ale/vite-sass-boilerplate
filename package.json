@@ -1,5 +1,5 @@
 {
-	"name": "A Sass Vite-template",
+	"name": "vite-sass-template",
 	"version": "1.0.0",
 	"description": "Simple starter template with Sass mixins,placeholders and variables using Vite as a bundler tool.",
 	"main": "main.js",
